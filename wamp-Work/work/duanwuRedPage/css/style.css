@@ -1,0 +1,134 @@
+ *{padding:0;margin:0;}
+body{margin:0px;padding:0px;overflow:auto;position:relative;font-family: '微软雅黑';background-color:#fdf8e2;font-size: 15px;}
+img{width:100%;border:none;vertical-align:middle;-webkit-tap-highlight-color:rgba(0,0,0,0);}
+input{outline: none;}
+.layout{width:100%; }
+.banner{position:fixed;width:100%;top:0%;z-index:99;}
+.redPacketCodeinfos{position: absolute;width:55%;bottom:17%;right:2%;}
+.usedownloadfirst{float:right;width:50%;margin:2% 0% 0% 2%;}
+
+.luckdiv{width:100%;position:absolute;top:21%;height:30%;}
+.showbok{position:relative;width:70%;height:100%;margin:0px auto;}
+.plate{
+	position:relative;
+	float:left;
+	width:78%;
+	height:94%;
+	margin:5% 0% 0% 11%;
+	background: url('../images/hb1.png') no-repeat;
+	background-size:100% 100%;
+	z-index:11;
+}
+.plateBtn{
+	position: absolute; 
+	left: 50%; 
+	top: 43%;
+ 	width: 32%; 
+ 	height: 31%; 
+ 	margin-left:-16%;
+ 	margin-top:-15%;
+    overflow: hidden;
+    z-index:22;text-indent: -9999;
+   -webkit-tap-highlight-color:rgba(0,0,0,0);
+   animation:all 0.5s ease-out;
+}
+
+.showresult{
+	position:relative;
+	float:left;
+	width:78%;
+	height:94%;
+	margin:5% 0% 0% 11%;
+	background: url('../images/hb2.png') no-repeat;
+	background-size:100% 100%;
+	z-index:11;
+}
+
+#result{
+	width:100%;
+	float: left;
+	position: relative;
+	text-align: center;
+	color:#cc0200;
+	margin:4% 0%;
+}
+.showgiftNo{
+	width:100%;
+	position: absolute;
+	top:36%;
+}
+.giftTxt{
+	width:65%;
+	float: left;
+	padding:1% 0%;
+	margin-left:5%;
+	text-align: center;
+	color:#ffffaf;
+}
+.showgameEWM{
+	width:100%;
+	float: left;
+	display: inline-block;
+	text-align: center;
+	position: absolute;
+	left:0%;
+	bottom:15%;
+}
+.gameEWMcss{
+	width:36%;border:2px solid #fdac03; margin:0px auto;
+}
+
+
+/*兑换码的部分*/
+.RedeemCode{
+	position:relative;
+	float:left;
+	width:78%;
+	height:94%;
+	top:5%;
+	left:11%;
+	background: url('../images/hb3.png') no-repeat;
+	background-size:100% 100%;
+	z-index:11;
+}
+
+form{border:none;}
+.codeDiv{
+	width:93%;
+	float:left;
+	position: relative;
+	margin:36% 0% 0% 7%;
+}
+.codeDiv input{
+	background: transparent;
+	border:none;color:#ffffaf;
+	text-indent: 10px;
+	padding:5% 0%;
+	float:left;
+}
+#codeNo-error,.showMsg{
+	width:100%;
+	float:left;
+	position: relative;
+	margin-top:6%;
+	text-align: center;
+	color:#ffffaf;
+}
+.codeSubmit{
+	width:100%;
+	float:left;
+	position: absolute;
+	bottom:23%;
+	text-align: center;
+}
+.codeSubmit input{
+	width:43%;
+	background-color:#ffe169 ;
+	color:#ce2939;
+    border-radius: .2em;
+	border:none;
+	padding:3% 0%;
+	font-size:14px;
+}
+ .footerewm{width:24%;margin:0% 6% 0% 9%;position:absolute;bottom:4.8%;}
+ .dealog{position:absolute;width:100%;z-index:99999999;top:0;background-color:rgba(0,0,0,0.6);height:100%;display:none;}

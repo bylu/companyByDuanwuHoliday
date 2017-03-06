@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="format-detection" content="telephone=no, email=no" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="pragma" content="no-cache"/>  
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="expires" content="0"/>  
+    <title>街机金蟾捕鱼</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+	<div class="layout">
+		<img src="images/bg.jpg" />
+		<div class="banner">
+			<img src="images/bg-top.jpg" />
+			<div class="redPacketCodeinfos">
+				<div class="usedownloadfirst"><img src="images/btn-xzyx.png"  class="usedowngame" /></div>
+			</div>
+		</div>
+		<!--红包显示的位置-->
+		<div class="luckdiv">
+			<div class="showbok">
+				<!--兑换码界面的部分 begin-->
+				<div class="RedeemCode">
+					<form id="codeForm" method="get" action="">
+					    <div class="codeDiv">
+					        <input id="codeNo" name="codeNo"  type="text" required > 
+					    </div>
+					    <p class="showMsg"></p>
+					    <div class="codeSubmit">
+					        <input class="btnsubmit" type="submit" value="确定" />
+					    </div>
+					</form>
+				</div>
+				<!--兑换码界面的部分 end-->
+			</div>
+		</div>
+      <div class="footerewm">
+      	<img src="images/ewm.jpg" class="ewmimages" />
+      </div>
+	</div>
+	<div class="dealog">
+		<img src="images/bg-tip.png"/>
+	</div>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
+	<script type="text/javascript">
+		window.onresize=function(){
+			updatePage();
+		}
+		//样式动态加载变化
+		function updatePage(){
+			var normal_width = 640;
+		    var normal_fontSize = 16;
+	        var getWidth = $(window).width();
+	        var scale = getWidth / normal_width;
+	        $(document.body).css("fontSize", normal_fontSize * scale*1.2 + "px");
+            $("#codeNo").css("font-size",normal_fontSize * scale * 1.5 +"px");
+            $(".btnsubmit").css("font-size",normal_fontSize *scale *1.4 +"px");
+		}
+	 	//判断是否是苹果设备
+	    function checkIsApple(){
+	        var u = navigator.userAgent, app = navigator.appVersion;
+	        var ios=!!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+	        var iPad=u.indexOf('iPad') > -1;
+	        var iPhone=u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1;
+	        if(ios || iPad || iPhone){
+	            return true;
+	        }else{
+	            return false;
+	        }
+	    }
+
+		$(function(){
+			updatePage();
+			//下载游戏按钮的事件
+			var ua = navigator.userAgent.toLowerCase();
+			if (ua.match(/MicroMessenger/i) == "micromessenger") {
+				//微信里面下载事件提示
+		        $(".usedowngame").bind('click', function(){
+					if (checkIsApple()) {
+						window.location.href = "https://itunes.apple.com/us/app/jie-ji-jin-chan-bu-yu-mian/id1022745046?l=zh&ls=1&mt=8";
+					}else{
+						//跳转到商城界面
+					}
+		        }); 
+		    }else{
+
+		    }
+
+			/*邀请码的提交*/
+			$("#codeForm").validate({
+				submitHandler: function (form) {
+					var userCode=$.trim($("#codeNo").val());
+
+	                //jQuery(form).ajaxSubmit();
+	            },
+				rules:{
+					codeNo:{required:true}
+				},
+				messages:{
+					codeNo:{required:"请输入您的邀请码"}
+				},
+				errorPlacement: function(error, element) { //指定错误信息位置 
+					if (element.is(':radio') || element.is(':checkbox')) { //如果是radio或checkbox 
+					var eid = element.attr('name'); //获取元素的name属性 
+					error.appendTo(element.parent()); //将错误信息添加当前元素的父结点后面 
+					}else { 
+						error.insertAfter(element); 
+					}
+				} 
+			});
+		});
+</script>
+</body>
+</html>
