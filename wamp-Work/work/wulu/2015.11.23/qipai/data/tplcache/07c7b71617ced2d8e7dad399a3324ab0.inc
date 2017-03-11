@@ -1,1 +1,0 @@
-<DD><a href="[field:arcurl/]">[field:title/]</a> </DD>

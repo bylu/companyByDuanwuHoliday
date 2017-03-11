@@ -1,0 +1,459 @@
+﻿*{margin:0;padding:0;}
+button,a,input{outline: none;}
+ul,li{list-style: none}
+body {
+    position:relative;
+    width:100%;
+    background: #06309c;
+    font: 16px/1.5 '微软雅黑';
+}
+.container{
+    width:100%;
+}
+.bg{
+    width:100%;
+    max-width: 100%;
+    border: none;
+}
+.showContent{
+    width:93%;
+    margin:0 3%;
+    position: absolute;
+    left:0;
+    top:9%;
+   
+}
+.bodyContent{
+    position: relative;
+    width:99.8%;
+    float: left;
+    border:2px solid #01ddff;
+    border-radius: 10px;
+    -webkit-box-shadow:inset 0 0 20px #0097d8;
+    -moz-box-shadow:inset 0 0 20px #0097d8;
+    box-shadow:inset 0 0 20px #0097d8;
+    margin-bottom: 2%;
+}
+.issue{
+    position: absolute;
+    width:36%;
+    top:18.5%;
+    left:35%;
+    color:#fff77e;
+    text-align: center;
+}
+
+.firstPagebtn{
+    width:77%;
+    position:absolute;
+    left:12%;
+    bottom:9.5%;
+}
+.btnAnswerQuestion{
+    width:46%;
+    float: left;
+    display: inline-block;
+}
+.lookForHistory{
+    width:47%;
+    float: right;
+    display: inline-block;
+}
+.btnAnswerQuestion img ,.lookForHistory img {width:100%; }
+.showItemContent{
+    padding-bottom:2%;
+}
+.showItemContent .itemList{
+    width:80%;
+    margin:3% 10% 0% 10%;
+    display: block;
+    padding:0% 0% 3% 0%;
+    float: left;
+    border-bottom:0.01rem dotted  rgba(115,175,253,.7);
+}
+.showItemContent .itemList:last-child{
+    border-bottom: 0px;
+}
+.itemList .title{
+    width:100%;
+    float: left;
+    color:#fff;
+    font-size: 1rem;
+    margin:1% 0%;
+}
+.questionSelect{
+    width:100%;
+    float: left;
+    font-size: .95rem;
+    margin-top:2%;
+}
+.questionSelect .selectItem{
+    width:50%;
+    float: left;
+    display: inline-block;
+    margin:2% 0% 2% 15%;
+}
+.postQuestionInfo{
+    width:100%;
+    position: relative;
+    float: left;
+    color:#00a0e8;
+    padding:5% 0% 8% 0%;
+    text-align: center;
+    font-size:0.95rem;
+}
+.showAnimal{
+    width:100%;
+    float: left;
+    position: relative;
+}
+.showAnimal img{
+    position: absolute;
+    top:-15px;
+    right:-16px;
+    width:23%;
+}
+.btnPostQuestion{
+    width:100%;
+    position: relative;
+    float: left;
+    text-align: center;
+    margin-top:5%;
+}
+.btnPostQuestion img{
+    width:50%;
+}
+.data-value{
+    display:none;
+}
+
+/*弹框部分*/
+.questionOverDialog01{
+   /* width: 90%;
+    left: 5%;
+     position: absolute;
+    top: 0;*/
+    width:100%;
+
+}
+.showUserOpera{
+    width: 100%;
+    position: absolute;
+    top: 59%;
+    left: 0;
+}
+.continueDraw{
+    width:100%;
+    float: left;
+    text-align: center;
+}
+.continueDraw img{
+    width:48%;
+}
+.questionOverDialog02{
+    width:100%;
+}
+
+
+/*大转盘部分*/
+.showLuckBg{
+   /* position: absolute;
+    top:30%;
+    left:0;*/
+    width:100%;
+    float: left;
+}
+.luckdiv{
+    width: 100%;
+    position: absolute;
+    /*top: 20%;
+    height: 40%;*/
+    top:32%;
+    height:100%;
+}
+.closebtn{
+    position: absolute;
+    right:8%;
+    top:25%;
+    width:13%;
+}
+.closebtn img{width:100%;}
+
+#dowebok {
+    position: relative;
+    width: 74%;
+    height: 58%;
+   /* margin: 0px auto;*/
+    background: url('../images/cj-bg.gif') no-repeat;
+    background-size: 100% 100%;
+    margin-left:14%;
+}
+
+.plate {
+    position: relative;
+    float: left;
+    width: 89%;
+    height: 89%;
+    top: 5%;
+    left: 5%;
+    background: url('../images/cjjc-bg.png') no-repeat;
+    background-size: 100% 100%;
+    z-index: 11;
+}
+
+.plateBtncss {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 58%;
+    height: 58%;
+    margin-left: -29%;
+    margin-top: -29%;
+    background: url('../images/000.png') no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    z-index: 22;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    animation: all 0.5s ease-out;
+}
+
+.plateBtncss2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 58%;
+    height: 58%;
+    margin-left: -29%;
+    margin-top: -29%;
+    background: url('../images/111.png') no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    z-index: 22;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.closebtn1{
+    position: absolute;
+    right:8%;
+    top:25%;
+    width:13%;
+}
+.closebtn1 img{width:100%;}
+
+#dowebok1 {
+    position: relative;
+    width: 74%;
+    height: 58%;
+    background: url('../images/f3.gif') no-repeat;
+    background-size: 100% 100%;
+    margin-left:14%;
+}
+
+.plate1 {
+    position: relative;
+    float: left;
+    width: 89%;
+    height: 89%;
+    top: 5%;
+    left: 5%;
+    background: url('../images/f4.png') no-repeat;
+    background-size: 100% 100%;
+    z-index: 11;
+}
+
+.plateBtncss1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 58%;
+    height: 58%;
+    margin-left: -29%;
+    margin-top: -29%;
+    background: url('../images/000.png') no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    z-index: 22;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    animation: all 0.5s ease-out;
+}
+
+.plateBtncss21 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    /*width: 60%;
+    height: 60%;
+    margin-left: -30%;
+    margin-top: -30%;*/
+    width: 58%;
+    height: 58%;
+    margin-left: -29%;
+    margin-top: -29%;
+    background: url('../images/111.png') no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    z-index: 22;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+
+/*中奖显示*/
+.prizeBg{
+    width:100%;
+    float: left;
+}
+.showprizeBg{
+    width:100%;
+}
+.showPrizeContent{
+    width:100%;
+    position: absolute;
+    top:50%;
+    left:0;
+}
+.prizeName{
+    width:94%;
+    float: left;
+    text-align: center;
+    color:#dd1b1c;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+}
+
+.codePrizediv{
+    position: relative;
+    width:100%;
+    float: left;
+}
+
+.codePrizeInfo{
+    width:36%;
+    position:absolute;
+    background: transparent;
+    text-indent: 6px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color:#ffffff;
+    border:none;
+    left:36%;
+    padding: 0.5% 0;
+    /* margin-top: 2%; */
+}
+.showPrizeBtns{
+    position: relative;
+    width:60%;
+    float: left;
+    margin:11% 11% 0% 25%;
+}
+
+.btnCopy{
+    width:35%;
+    padding:7% 0%;
+    float: left;
+    display: inline-block;
+    background: url('../images/prizeCode.png') no-repeat;
+    background-size: 100% 100%;
+    border:none;
+}
+.prizeRecodeBtn{
+    width:37%;
+    padding:7% 0%;
+    margin-left:5%;
+    float: left;
+    display: inline-block;
+    background: url('../images/havePrize.png') no-repeat;
+    background-size: 100% 100%;
+    border:none;
+}
+.showPrizeBtnone{
+    position: relative;
+    width:100%;
+    float: left;
+    text-align: center;
+    margin-top:10%;
+}
+.trygetPrize{
+    width:35%;
+    padding:5% 0%;
+    background: url('../images/j1.png') no-repeat;
+    background-size: 100% 100%;
+    border:none;
+}
+.showSpecialPrizeContent{
+    width: 100%;
+    position: absolute;
+    top: 69.5%;
+    left: 0;
+}
+.specialprize{
+    width:94%;
+    float: left;
+    text-align: center;
+    color:#dd1b1c;
+    font-weight: bold;
+    font-size: 13px;
+}
+.codeSpecailPrizeInfo{
+    position: relative;
+    width:37%;
+    background: #eb4302;
+    margin-left:36%;
+    text-indent: 6px;
+    font-size: 1.15rem;
+    font-weight: bold;
+    color:#ffffff;
+   /*  padding:0.5% 0%; */
+    margin-top:2%;
+    border:none
+}
+.showPrizeBtnspecial{
+    position: relative;
+    width:100%;
+    float: left;
+    text-align: center;
+    margin-top:1%;
+}
+.myRecodeBtn{
+    width:30%;
+    padding:5% 0%;
+    background: url('../images/havePrize.png') no-repeat;
+    background-size: 100% 100%;
+    border:none;
+}
+
+.noSpecailPrizeBtn{
+    width:100%;
+    float: left;
+    text-align: center;
+}
+.noSpecailPrizeBtn img{
+    width:48%;
+}
+
+
+/*中奖记录*/
+.prizeRecodeList{
+    width:100%;
+    float: left;
+    position: relative;
+    margin-top:12%;
+    padding-bottom: 10%;
+}
+.prizeRecodeList ul li{
+    width:100%;
+    float: left;
+    margin-top:2px;
+}
+.prizeRecodeList ul li span{
+    float: left;
+    display: inline-block;
+    text-align: center;
+    font-size:.95rem;
+    color:#ffffff;
+}
+.wid20{width:20%;}
+.wid22{width:22%;}
+.wid31{width:31%;}
+.wid27{width:27%;}

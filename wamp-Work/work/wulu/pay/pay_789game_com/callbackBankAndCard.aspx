@@ -1,1 +1,0 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="callbackBankAndCard.aspx.cs" Inherits="Game.Web.callbackBankAndCard" %>
