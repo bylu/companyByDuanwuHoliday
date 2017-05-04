@@ -1,0 +1,45 @@
+@charset "utf-8";
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+
+
+.turntable-bg {
+	width:451px;
+	margin:40px auto 0 auto;
+	height:451px;
+	position:relative;
+	background:url("../images/cj-bg.gif");
+}
+.turntable-bg .mask {
+	width:454px;
+	height:451px;
+	position:absolute;
+	left:116px;
+	top:60px;
+	/*z-index:9;*/
+}
+.turntable-bg .pointer {
+	width:166px;
+	height:166px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-91px;
+	margin-top:-86px;
+	z-index:8;
+}
+.thisbg{
+	width:100%;
+	height: 100%;
+	border-radius: 50%;
+	background: blue;
+}
+
+.turntable-bg .rotate {
+	width:396px;
+	height:396px;
+	position:absolute;
+	left:27px;
+	top:27px;
+}
